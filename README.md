@@ -4,6 +4,7 @@
 ```mermaid
 classDiagram
     class User {
+        -Long id
         - String name
         - Account account
         - Card card
@@ -12,6 +13,7 @@ classDiagram
     }
 
     class Account {
+        -Long id
         - String number
         - String agency
         - double balance
@@ -19,16 +21,19 @@ classDiagram
     }
 
     class Feature {
+        -Long id
         - String icon
         - String description
     }
 
     class Card {
+        -Long id
         - String number
         - double limit
     }
 
     class News {
+        -Long id
         - String icon
         - String description
     }
